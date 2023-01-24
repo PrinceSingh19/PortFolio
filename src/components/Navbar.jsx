@@ -7,11 +7,11 @@ const Navbar = () => {
 	const [navOpen, setNavOpen] = useState(false);
 	return (
 		<>
-			<div className="mx-2 sticky grid grid-cols-2 items-center  ">
+			<div className="px-2 sticky grid grid-cols-2 items-center bg-slate-900  ">
 				<div>
 					<TbLetterP className="stroke-red-500 stroke-2 text-6xl" />
 				</div>
-				<div className="md:hidden flex justify-end mr-3 z-50">
+				<div className="md:hidden flex justify-end  z-50">
 					<button onClick={() => setNavOpen(!navOpen)}>
 						{navOpen ? (
 							<RiMenuFill className="text-white text-3xl" />
@@ -30,11 +30,13 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div>
-				<div className="md:hidden bg-white z-40">
+				<div
+					className={`md:hidden  bg-slate-900 float-right w-1/2 h-60 z-40 transition-all ease-in-out duration-500 ${
+						navOpen ? "-translate-y-[1000px]" : "translate-y-0"
+					}`}
+				>
 					<ol
-						className={`flex flex-col gap-y-3 items-end text-cyan-400 text-lg mr-3 ${
-							navOpen ? "hidden" : "right-0 duration-1000"
-						}`}
+						className={`flex flex-col justify-center bg-slate-900 gap-y-5 items-end text-cyan-400 h-full text-lg mr-3`}
 					>
 						<li className="cursor-pointer hover:text-cyan-600">About</li>
 						<li className="cursor-pointer hover:text-cyan-600">My Skills</li>
