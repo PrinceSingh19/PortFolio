@@ -1,6 +1,7 @@
 import React from "react";
 import SingleProject from "./SingleProject";
 import { Data } from "./Data";
+import OtherProjects from "./OtherProjects";
 
 const Projects = () => {
 	return (
@@ -14,6 +15,10 @@ const Projects = () => {
 					{Data.map((project, index) => {
 						return <SingleProject key={index} ind={index} project={project} />;
 					})}
+				</div>
+				<div>
+					<h1 className="text-textColor">Other noteworthy projects</h1>
+					<OtherProjects />
 				</div>
 			</div>
 		</div>

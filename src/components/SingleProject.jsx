@@ -4,7 +4,6 @@ import { FiExternalLink } from "react-icons/fi";
 
 const SingleProject = ({ ind, project }) => {
 	const isEven = ind % 2 === 0;
-	console.log(isEven);
 	const { title, description, github, demoLink, imgSrc, tech, alt } = project;
 	return (
 		<div className="mb-20 grid grid-cols-1 md:grid-cols-2 gap-x-10 items-center">
@@ -14,7 +13,7 @@ const SingleProject = ({ ind, project }) => {
 			</div>
 			<div className={`${isEven == false ? "md:order-1" : ""} `}>
 				<figure>
-					<img src={imgSrc} alt={alt} />
+					<img src={imgSrc} alt={alt} className="rounded-md " />
 				</figure>
 			</div>
 			<div className="mt-4">

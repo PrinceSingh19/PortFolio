@@ -50,3 +50,10 @@ export const Data = [
 		demoLink: "https://ecomreactcontext.netlify.app/",
 	},
 ];
+
+export const otherData = [
+	{
+		title: "Todo List",
+		description: "",
+	},
+];
