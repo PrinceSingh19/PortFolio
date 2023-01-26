@@ -11,3 +11,7 @@
 .navShadow {
 	box-shadow: 0 10px 10px -2px gray;
 }
+
+.list {
+	@apply flex items-center gap-2;
+}
