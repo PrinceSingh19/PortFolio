@@ -6,7 +6,7 @@ import { FaCircle } from "react-icons/fa";
 const OtherProjects = ({ other }) => {
 	const { title, imgSrc, tech, demo, github } = other;
 	return (
-		<div className="hover:scale-105">
+		<div className="hover:transition-all hover:duration-500 hover:scale-105 hover:shadow-md hover:shadow-slate-400">
 			<div className="pb-2 md:h-64 text-white bg-slate-700 rounded-md pt-1">
 				<div className="grid grid-cols-2 gap-x-5 place-items-center mt-2 px-2">
 					<div className="md:text-lg flex gap-x-2">
