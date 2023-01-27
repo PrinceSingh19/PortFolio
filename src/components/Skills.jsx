@@ -55,7 +55,7 @@ const Skills = () => {
 						Visit my{" "}
 						<a
 							href="https://www.linkedin.com/in/prince-singh-703b5b1a4/"
-							target="/blank"
+							target="_blank"
 							className="text-textColor"
 						>
 							linkedin

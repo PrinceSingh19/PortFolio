@@ -15,3 +15,15 @@
 .list {
 	@apply flex items-center gap-2;
 }
+
+.contact {
+	@apply flex flex-col items-center gap-y-1;
+}
+
+.inputs {
+	@apply border-2 pl-2 border-slate-300 rounded-sm text-black;
+}
+
+.socials {
+	@apply flex gap-x-2 items-center;
+}

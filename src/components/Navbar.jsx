@@ -7,7 +7,7 @@ const Navbar = () => {
 	const [navOpen, setNavOpen] = useState(false);
 	const navList = (
 		<>
-			<ul className="flex flex-col md:flex-row  md:items-center space-y-5 md:space-y-0 pt-8 md:pt-0 py-3 md:py-0 md:pb-0  w-full md:w-auto md:space-x-8 text-textColor">
+			<ul className="flex flex-col  md:flex-row  md:items-center space-y-5 md:space-y-0 pt-8 md:pt-0 py-3 md:py-0 md:pb-0  w-full md:w-auto md:space-x-8 text-textColor">
 				<li className="hover:bg-slate-700 md:hover:bg-inherit md:hover:scale-105 w-full md:w-auto text-center py-1 md:py-0 font-medium md:font-normal">
 					About
 				</li>

@@ -25,12 +25,12 @@ const SingleProject = ({ ind, project }) => {
 				<small className="text-sm text-textColor">{tech}</small>
 				<div className="mt-2 flex items-center gap-6">
 					<button className="px-4 py-2 border-2 border-neon hover:bg-violet-900 rounded-md">
-						<a href={github} target="/blank" className="flex items-center gap-x-2">
+						<a href={github} target="_blank" className="flex items-center gap-x-2">
 							<FaGithub className="fill-green-300 text-lg" /> Github
 						</a>
 					</button>
 					<button className="px-4 py-2 border-2 border-neon rounded-md hover:bg-violet-900">
-						<a href={demoLink} target="/blank" className="flex items-center gap-x-2">
+						<a href={demoLink} target="_blank" className="flex items-center gap-x-2">
 							<FiExternalLink className="stroke-green-300 text-lg" /> Demo
 						</a>
 					</button>
