@@ -6,7 +6,7 @@ import OtherProjects from "./OtherProjects";
 const Projects = () => {
 	const mobileOther = otherData.slice(0, 3);
 	return (
-		<div className="w-3/4 mx-auto mt-20 md:mt-40">
+		<div id="projects" className="w-3/4 mx-auto mt-20 md:mt-40">
 			<hr className="text-textColor w-1/2" />
 			<div className="mt-2">
 				{/* Displaying main react projects */}

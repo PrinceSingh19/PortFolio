@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { BsFillTelephoneFill, BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
+import React, { useRef } from "react";
+import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaLocationArrow } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import Socials from "./Socials";
@@ -26,8 +26,10 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="w-3/4 mx-auto">
-			<h1 className="text-slate-300 text-2xl">Contact me</h1>
+		<div id="contact" className="w-3/4 mx-auto mt-20 md:mt-40">
+			<hr className="text-textColor w-1/2" />
+
+			<h1 className="text-slate-300 text-2xl mt-2">Contact me</h1>
 			<div className="grid grid-cols-1 gap-y-4 md:gap-y-0 md:grid-cols-3 mt-4">
 				<div className="contact">
 					<FaLocationArrow className="text-3xl fill-blue-400" />

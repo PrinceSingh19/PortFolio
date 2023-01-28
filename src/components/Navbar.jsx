@@ -2,24 +2,51 @@ import React, { useState } from "react";
 import { TbLetterP } from "react-icons/tb";
 import { RiMenuFill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
+import { NavHashLink } from "react-router-hash-link";
 
 const Navbar = () => {
 	const [navOpen, setNavOpen] = useState(false);
+	const scrollWithOffset = (el) => {
+		const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+		const yOffset = -60;
+		window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+	};
+
 	const navList = (
 		<>
 			<ul className="flex flex-col  md:flex-row  md:items-center space-y-5 md:space-y-0 pt-8 md:pt-0 py-3 md:py-0 md:pb-0  w-full md:w-auto md:space-x-8 text-textColor">
-				<li className="hover:bg-slate-700 md:hover:bg-inherit md:hover:scale-105 w-full md:w-auto text-center py-1 md:py-0 font-medium md:font-normal">
+				<NavHashLink
+					to="/#about"
+					smooth
+					scroll={scrollWithOffset}
+					className="hover:bg-slate-700 md:hover:bg-inherit md:hover:scale-105 w-full md:w-auto text-center py-1 md:py-0 font-medium md:font-normal"
+				>
 					About
-				</li>
-				<li className="hover:bg-slate-700 md:hover:bg-inherit md:hover:scale-105 w-full text-center py-1 font-medium md:font-normal">
+				</NavHashLink>
+				<NavHashLink
+					to="/#skills"
+					smooth
+					scroll={scrollWithOffset}
+					className="hover:bg-slate-700 md:hover:bg-inherit md:hover:scale-105 w-full text-center py-1 font-medium md:font-normal"
+				>
 					Skills
-				</li>
-				<li className="hover:bg-slate-700 md:hover:bg-inherit md:hover:scale-105 w-full text-center py-1 font-medium md:font-normal">
+				</NavHashLink>
+				<NavHashLink
+					to="/#projects"
+					smooth
+					scroll={scrollWithOffset}
+					className="hover:bg-slate-700 md:hover:bg-inherit md:hover:scale-105 w-full text-center py-1 font-medium md:font-normal"
+				>
 					Projects
-				</li>
-				<li className="hover:bg-slate-700 md:hover:bg-inherit md:hover:scale-105 w-full text-center py-1 font-medium md:font-normal">
+				</NavHashLink>
+				<NavHashLink
+					to="/#contact"
+					smooth
+					scroll={scrollWithOffset}
+					className="hover:bg-slate-700 md:hover:bg-inherit md:hover:scale-105 w-full text-center py-1 font-medium md:font-normal"
+				>
 					Contact
-				</li>
+				</NavHashLink>
 				<li className="hover:bg-slate-700 md:hover:bg-inherit  w-full text-center py-1 font-medium md:font-normal">
 					<button className="border-2  border-neon px-4 rounded-md text-textColor  hover:bg-slate-700 md:hover:bg-none md:hover:scale-105  md:w-auto text-center py-1 md:py-0 font-medium md:font-normal">
 						Resume

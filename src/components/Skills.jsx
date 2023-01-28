@@ -7,7 +7,7 @@ import { DiGit, DiSass } from "react-icons/di";
 
 const Skills = () => {
 	return (
-		<div className="w-3/4 mx-auto mt-20 md:mt-40">
+		<div id="skills" className="w-3/4 mx-auto mt-20 md:mt-40">
 			<hr className="text-textColor w-1/2" />
 			<div className="mt-2">
 				<h1 className="text-slate-300 text-2xl font-medium mb-4">My Skills</h1>

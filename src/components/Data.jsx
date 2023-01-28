@@ -1,7 +1,7 @@
 export const Data = [
 	{
 		title: "ExpressCart",
-		imgSrc: "../../public/images/exresscart.jpg",
+		imgSrc: "/images/exresscart.jpg",
 		alt: "expresscart project",
 		description:
 			"An ecommerce shopping app to gain the knowledge of building mid sized web application and to work with REST Api's",
@@ -11,7 +11,7 @@ export const Data = [
 	},
 	{
 		title: "Ristaurate Con Fusion",
-		imgSrc: "../../public/images/restaurant.jpg",
+		imgSrc: "/images/restaurant.jpg",
 		alt: "Restaurant project",
 		description:
 			"A restaurant website to showcase the skills of performing CRUD operation on REST api's using json-server and understading process of overall website creation. This website has the features like posting comments, fetching updated comments from server and displaying them, persisting the form data when moving between pages",
@@ -21,7 +21,7 @@ export const Data = [
 	},
 	{
 		title: "SnapShot",
-		imgSrc: "../../public/images/snapshot.jpg",
+		imgSrc: "/images/snapshot.jpg",
 		alt: "SnapShot app image",
 		description:
 			"To demonstrate the ability of fetching data from API's and displaying the results based on fixed routes, search criteria and other operation specified by user",
@@ -31,7 +31,7 @@ export const Data = [
 	},
 	{
 		title: "Calculator App",
-		imgSrc: "../../public/images/calculator.jpg",
+		imgSrc: "/images/calculator.jpg",
 		alt: "Calcultor image",
 		description: "Made this project to gain more deep understanding of react-hooks.",
 		tech: "React, TailwindCSS, useReducer hook, JavaScript",
@@ -41,7 +41,7 @@ export const Data = [
 
 	{
 		title: "Ecommerce Shopping App",
-		imgSrc: "../../public/images/shoppingapp.jpg",
+		imgSrc: "/images/shoppingapp.jpg",
 		alt: "Shopping App image",
 		description:
 			"My first ecommerce shopping app to understand the build process of the an ecommerce app. I have implemented this project using React's context api as well as Redux-toolkit to manage the state of the app.",
@@ -58,14 +58,14 @@ export const otherData = [
 		demo: "https://todoprince.netlify.app/",
 		description: "A simple todo list app where you can create, modify, and delete todos",
 		tech: "React, Sass",
-		imgSrc: "../../public/images/todo.jpg",
+		imgSrc: "/images/todo.jpg",
 	},
 
 	{
 		title: "Ristaurante Con Fusion",
 		description: "A static restaurant website",
 		tech: "JS, Gulp, Gulp plugin, BootStrap, CSS",
-		imgSrc: "../../public/images/restaurante.jpg",
+		imgSrc: "/images/restaurante.jpg",
 		demo: "https://princesingh19.github.io/BootStrap-build-with-Gulp-task-runner/dist/",
 		github: "https://github.com/PrinceSingh19/BootStrap-build-with-Gulp-task-runner",
 	},
@@ -73,7 +73,7 @@ export const otherData = [
 		title: "Dam Website",
 		description: "A static dam website",
 		tech: "HTML5, CSS3, BootStrap",
-		imgSrc: "../../public/images/dam.jpg",
+		imgSrc: "/images/dam.jpg",
 		demo: "https://princesingh19.github.io/Web-Development-Projects/Hirakud%20Dam%20Website/index.html",
 		github:
 			"https://github.com/PrinceSingh19/Web-Development-Projects/tree/main/Hirakud%20Dam%20Website",
@@ -82,7 +82,7 @@ export const otherData = [
 		title: "Product Landing Page",
 		description: "A product landing page",
 		tech: "HTML5, CSS3",
-		imgSrc: "../../public/images/landing.jpg",
+		imgSrc: "/images/landing.jpg",
 		demo: "https://princesingh19.github.io/Web-Development-Projects/Product%20Landing%20Page/",
 		github:
 			"https://github.com/PrinceSingh19/Web-Development-Projects/tree/main/Product%20Landing%20Page",
@@ -92,7 +92,7 @@ export const otherData = [
 		description:
 			"A responsive technical documentation page to understand data binding and navigation to various parts using HTML only",
 		tech: "HTML5, CSS3",
-		imgSrc: "../../public/images/documentation.jpg",
+		imgSrc: "/images/documentation.jpg",
 		demo: "https://princesingh19.github.io/Web-Development-Projects/Technical%20Documentation%20Page/",
 		github:
 			"https://github.com/PrinceSingh19/Web-Development-Projects/tree/main/Technical%20Documentation%20Page",
@@ -101,7 +101,7 @@ export const otherData = [
 		title: "Survey Form",
 		description: "A responsive survey form",
 		tech: "HTML5, CSS3",
-		imgSrc: "../../public/images/survey.jpg",
+		imgSrc: "/images/survey.jpg",
 		demo: "https://princesingh19.github.io/Web-Development-Projects/Survey%20Form/",
 		github: "https://github.com/PrinceSingh19/Web-Development-Projects/tree/main/Survey%20Form",
 	},
