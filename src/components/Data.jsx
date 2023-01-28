@@ -106,3 +106,22 @@ export const otherData = [
 		github: "https://github.com/PrinceSingh19/Web-Development-Projects/tree/main/Survey%20Form",
 	},
 ];
+
+export const inPageNav = [
+	{
+		link: "#about",
+		title: "About",
+	},
+	{
+		link: "#skills",
+		title: "Skills",
+	},
+	{
+		link: "#projects",
+		title: "Projects",
+	},
+	{
+		link: "#contact",
+		title: "Contact",
+	},
+];
