@@ -2,10 +2,13 @@ import React from "react";
 
 const Intro = () => {
 	return (
-		<div className="flex flex-col md:w-3/4 px-10 md:px-0 h-screen justify-center md:mx-auto">
+		<div
+			id="intro"
+			className="flex flex-col md:w-3/4 px-10 md:px-0 h-screen justify-center md:mx-auto"
+		>
 			<h3 className="text-textColor md:text-xl">Hi,</h3>
 			<h3 className="text-textColor md:text-xl">My name is,</h3>
-			<h1 className="text-3xl md:text-7xl font-semibold"> Prince Singh.</h1>{" "}
+			<h3 className="text-3xl md:text-7xl font-semibold"> Prince Singh.</h3>{" "}
 			<span className="text-slate-400 text-xl md:text-3xl font-medium">Front end engineer</span>
 			<h3 className="text-slate-400 text-xl md:text-3xl font-medium ">
 				I build applications for the web.

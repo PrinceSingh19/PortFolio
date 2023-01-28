@@ -18,7 +18,11 @@ function App() {
 	}, []);
 
 	if (loading) {
-		return <div className="text-center">Loading..</div>;
+		return (
+			<div className="flex justify-center items-center mt-96 md:mt-56 animate-bounce">
+				<img src="/images/Logo.png" alt="logo" className="w-20" />
+			</div>
+		);
 	}
 	return (
 		<div className="App">

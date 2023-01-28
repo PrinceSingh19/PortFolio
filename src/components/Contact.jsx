@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
-import { BsFillTelephoneFill } from "react-icons/bs";
+import { BsFillArrowUpCircleFill, BsFillTelephoneFill } from "react-icons/bs";
 import { FaLocationArrow } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { NavHashLink } from "react-router-hash-link";
 import Socials from "./Socials";
 
 const Contact = () => {
@@ -106,7 +107,13 @@ const Contact = () => {
 				</div>
 			</div>
 
-			<div className="flex gap-x-2 mb-2 md:justify-center items-center">
+			<div className="flex gap-x-2 mb-2 md:justify-center  items-center">
+				<div className="w-16 flex items-center">
+					<NavHashLink to="#intro" smooth>
+						<BsFillArrowUpCircleFill className="animate-bounce  text-2xl" />
+					</NavHashLink>
+				</div>
+
 				<h1 className="font-bold">Prince Singh</h1>
 				<p>&#169; {new Date().getFullYear()}</p>
 				<p>All rights reserved</p>
@@ -116,3 +123,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+/* flex gap-x-2 mb-2 md:justify-center items-center */

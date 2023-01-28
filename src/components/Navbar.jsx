@@ -3,6 +3,7 @@ import { TbLetterP } from "react-icons/tb";
 import { RiMenuFill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
 import { NavHashLink } from "react-router-hash-link";
+import { ReactComponent as Logo } from "../assets/b194869b108b9ac2a4b435b079aa9b4a.svg";
 
 const Navbar = () => {
 	const [navOpen, setNavOpen] = useState(false);
@@ -47,11 +48,15 @@ const Navbar = () => {
 				>
 					Contact
 				</NavHashLink>
-				<li className="hover:bg-slate-700 md:hover:bg-inherit  w-full text-center py-1 font-medium md:font-normal">
+				<a
+					href="https://drive.google.com/file/d/1NX8nui3zYhHdodAM3g1s8WSuBgNoLsvx/view?usp=sharing"
+					target="_blank"
+					className="hover:bg-slate-700 md:hover:bg-inherit  w-full text-center py-1 font-medium md:font-normal"
+				>
 					<button className="border-2  border-neon px-4 rounded-md text-textColor  hover:bg-slate-700 md:hover:bg-none md:hover:scale-105  md:w-auto text-center py-1 md:py-0 font-medium md:font-normal">
 						Resume
 					</button>
-				</li>
+				</a>
 			</ul>
 		</>
 	);
@@ -59,8 +64,8 @@ const Navbar = () => {
 		<>
 			<nav className="sticky backdrop-blur-2xl h-10 top-0 z-50  flex flex-col justify-center ">
 				<div className="flex justify-between items-center w-full pr-5 ">
-					<div>
-						<TbLetterP className="text-3xl text-textColor " />
+					<div className="mt-1">
+						<img src="/images/Logo.png" alt="logo" className="w-14 md:w-20" />
 					</div>
 					<div className="hidden md:flex items-center justify-center">{navList}</div>
 					<div className="md:hidden flex justify-end z-40 ">
