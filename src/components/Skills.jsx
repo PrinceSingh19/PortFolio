@@ -1,57 +1,104 @@
-import React from "react";
+import React, { useRef } from "react";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaBootstrap, FaGulp, FaReact } from "react-icons/fa";
 import { SiJquery, SiRedux } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { DiGit, DiSass } from "react-icons/di";
-
+import { motion } from "framer-motion";
 const Skills = () => {
+	const container = {
+		hidden: { opacity: 0 },
+		show: {
+			opacity: 1,
+			transition: {
+				delay: 0.1,
+				staggerChildren: 0.2,
+			},
+		},
+	};
+
+	const item = {
+		hidden: { opacity: 0 },
+		show: { opacity: 1 },
+	};
 	return (
 		<div id="skills" className="w-3/4 mx-auto mt-20 md:mt-40">
 			<hr className="text-textColor w-1/2" />
 			<div className="mt-2">
-				<h1 className="text-slate-300 text-2xl font-medium mb-4">My Skills</h1>
+				<motion.h1
+					initial={{ opacity: 0 }}
+					transition={{ delay: 0.1 }}
+					whileInView={{ opacity: 1 }}
+					className="text-slate-300 text-2xl font-medium mb-4"
+				>
+					My Skills
+				</motion.h1>
 				<div className="w-3/4">
-					<p>
+					<motion.p
+						initial={{ opacity: 0 }}
+						transition={{ delay: 0.1 }}
+						whileInView={{ opacity: 1 }}
+					>
 						I create website that are performant, easy to use and build with keeping the end-user in
 						mind. My main area of expertise is front-end-development.
-					</p>
+					</motion.p>
 					<br />
-					<p>Here are the technologies I have been worked till date</p>
+					<motion.p
+						initial={{ opacity: 0 }}
+						transition={{ delay: 0.1 }}
+						whileInView={{ opacity: 1 }}
+					>
+						Here are the technologies I have been worked till date
+					</motion.p>
 					<div className="grid grid-cols-2 mt-4">
-						<ul className="list-disc list-inside ">
-							<li className="list">
+						<motion.ul
+							variants={container}
+							whileInView="show"
+							initial="hidden"
+							className="list-disc list-inside "
+						>
+							<motion.li variants={item} className="list">
 								<IoLogoJavascript className="fill-yellow-300 text-xl" /> JavaScript
-							</li>
-							<li className="list">
+							</motion.li>
+							<motion.li variants={item} className="list">
 								<FaReact className="fill-blue-300 text-xl" /> React
-							</li>
-							<li className="list">
+							</motion.li>
+							<motion.li variants={item} className="list">
 								<SiRedux className="fill-purple-500 text-xl" /> Redux
-							</li>
-							<li className="list">
+							</motion.li>
+							<motion.li variants={item} className="list">
 								<SiJquery className="fill-blue-500 text-xl" /> Jquery
-							</li>
-							<li className="list">
+							</motion.li>
+							<motion.li variants={item} className="list">
 								<FaGulp className="fill-red-500 text-xl" /> Gulp
-							</li>
-						</ul>
-						<ul className="list-disc list-inside">
-							<li className="list">
+							</motion.li>
+						</motion.ul>
+						<motion.ul
+							variants={container}
+							initial="hidden"
+							whileInView="show"
+							className="list-disc list-inside"
+						>
+							<motion.li variants={item} className="list">
 								<SiTailwindcss className="fill-blue-500 text-xl" /> TailwindCSS
-							</li>
-							<li className="list">
+							</motion.li>
+							<motion.li variants={item} className="list">
 								<FaBootstrap className="fill-purple-500 text-xl" /> BootStrap
-							</li>
-							<li className="list">
+							</motion.li>
+							<motion.li variants={item} className="list">
 								<DiSass className="fill-pink-500 text-xl" /> Sass
-							</li>
-							<li className="list">
+							</motion.li>
+							<motion.li variants={item} className="list">
 								<DiGit className="fill-red-500 text-xl" /> Git
-							</li>
-						</ul>
+							</motion.li>
+						</motion.ul>
 					</div>
-					<p className="mt-2">
+					<motion.p
+						initial={{ opacity: 0 }}
+						transition={{ delay: 0.1 }}
+						whileInView={{ opacity: 1 }}
+						className="mt-2"
+					>
 						Visit my{" "}
 						<a
 							href="https://www.linkedin.com/in/prince-singh-703b5b1a4/"
@@ -61,7 +108,7 @@ const Skills = () => {
 							linkedin
 						</a>{" "}
 						profile for more details or contact me.
-					</p>
+					</motion.p>
 				</div>
 			</div>
 		</div>

@@ -1,13 +1,24 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const About = () => {
 	return (
 		<div id="about" className="w-3/4 mx-auto mt-48">
 			<hr className="text-textColor w-1/2" />
 			<div className="mt-2">
-				<h1 className="text-slate-300 text-2xl font-medium mb-4">About Me</h1>
+				<motion.h1
+					initial={{ opacity: 0 }}
+					transition={{ delay: 0.1 }}
+					whileInView={{ opacity: 1 }}
+					className="text-slate-300 text-2xl font-medium mb-4"
+				>
+					About Me
+				</motion.h1>
 				<div className="grid grid-cols-1 md:grid-cols-2">
-					<div>
+					<motion.div
+						initial={{ opacity: 0 }}
+						transition={{ delay: 0.1 }}
+						whileInView={{ opacity: 1 }}
+					>
 						<p>
 							Hello my name is Prince Singh and I love to build things that works in internet. I
 							have serious passion for creating intuitive, dynamic user experiences and making web
@@ -29,7 +40,7 @@ const About = () => {
 								<li>BootStrap</li>
 							</ul>
 						</div>
-					</div>
+					</motion.div>
 					<div className="mt-6 md:mt-0 md:ml-20 ">
 						<img
 							src="https://th.bing.com/th/id/R.0225855b2d84ed75edee72d336db94a7?rik=ur03%2b98dOcebMw&riu=http%3a%2f%2feskipaper.com%2fimages%2fimages-2.jpg&ehk=d1SxQlwf21gsnaF28wg0HZQjPhrc2N0xSKLqA2lgX3c%3d&risl=&pid=ImgRaw&r=0g"

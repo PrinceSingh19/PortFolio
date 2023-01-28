@@ -2,9 +2,9 @@ import React from "react";
 import { BsCodeSlash } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
 import { FaCircle } from "react-icons/fa";
-
 const OtherProjects = ({ other }) => {
 	const { title, imgSrc, tech, demo, github } = other;
+
 	return (
 		<div className="hover:transition-all hover:duration-300  hover:shadow-md hover:shadow-slate-400">
 			<div className="pb-2 md:h-64 text-white bg-slate-700 rounded-md pt-1">
@@ -28,7 +28,7 @@ const OtherProjects = ({ other }) => {
 					</div>
 				</div>
 				<figure className="w-11/12 mx-auto mt-6">
-					<img src={imgSrc} alt="alt" className="rounded-md " />
+					<img src={imgSrc} alt="alt" loading="lazy" className="rounded-md " />
 					<figcaption className="text-center font-medium pb-2 md:pb-0">{title}</figcaption>
 				</figure>
 				<div>

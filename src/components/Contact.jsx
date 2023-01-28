@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { BsFillArrowUpCircleFill, BsFillTelephoneFill } from "react-icons/bs";
 import { FaLocationArrow } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -6,26 +6,6 @@ import { NavHashLink } from "react-router-hash-link";
 import Socials from "./Socials";
 
 const Contact = () => {
-	const inputRef = useRef({});
-	const reset = () => {
-		inputRef.current["name"].value = "";
-		inputRef.current["email"].value = "";
-		inputRef.current["subject"].value = "";
-		inputRef.current["message"].value = "";
-	};
-	const handleSubmit = (e) => {
-		if (e.keycode == 8) {
-			return;
-		}
-		e.preventDefault();
-		const name = inputRef.current["name"].value;
-		const email = inputRef.current["email"].value;
-		const subject = inputRef.current["subject"].value;
-		const message = inputRef.current["message"].value;
-		console.log(name, email, subject, message);
-		reset();
-	};
-
 	return (
 		<div id="contact" className="w-3/4 mx-auto mt-20 md:mt-40">
 			<hr className="text-textColor w-1/2" />
@@ -52,24 +32,15 @@ const Contact = () => {
 			<div className="grid grid-cols-1 md:grid-cols-2 mb-10 mt-8 items-center">
 				<div>
 					<h3 className="text-lg mb-2">Drop me a mail</h3>
-					<form className="flex flex-col gap-y-4 md:w-1/2" onSubmit={handleSubmit}>
+					<form
+						action="https://formspree.io/f/xqkoeqpq"
+						method="POST"
+						className="flex flex-col gap-y-4 md:w-1/2"
+					>
+						<input type="text" name="name" placeholder="Name" className="inputs h-8 md:h-10 " />
+						<input type="email" name="email" placeholder="Email" className="inputs h-8 md:h-10" />
 						<input
 							type="text"
-							ref={(el) => (inputRef.current["name"] = el)}
-							name="name"
-							placeholder="Name"
-							className="inputs h-8 md:h-10 "
-						/>
-						<input
-							type="email"
-							ref={(el) => (inputRef.current["email"] = el)}
-							name="email"
-							placeholder="Email"
-							className="inputs h-8 md:h-10"
-						/>
-						<input
-							type="text"
-							ref={(el) => (inputRef.current["subject"] = el)}
 							name="subject"
 							placeholder="Subject"
 							className="inputs h-8 md:h-10"
@@ -78,7 +49,7 @@ const Contact = () => {
 							type="text"
 							rows="4"
 							placeholder="Message"
-							ref={(el) => (inputRef.current["message"] = el)}
+							name="message"
 							className="inputs h-20"
 						/>
 						<button

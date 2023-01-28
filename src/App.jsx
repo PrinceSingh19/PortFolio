@@ -7,14 +7,13 @@ import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-
 function App() {
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		setTimeout(() => {
 			setLoading(false);
-		}, 2000);
+		}, 1000);
 	}, []);
 
 	if (loading) {

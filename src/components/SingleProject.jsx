@@ -1,19 +1,25 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-
+import { motion } from "framer-motion";
 const SingleProject = ({ ind, project }) => {
 	const isEven = ind % 2 === 0;
 	const { title, description, github, demoLink, imgSrc, tech, alt } = project;
 	return (
-		<div className="mb-20 grid grid-cols-1 md:grid-cols-2 gap-x-10 items-center">
+		<motion.div
+			initial={{ opacity: 0 }}
+			transition={{ delay: 0.3 }}
+			whileInView={{ opacity: 1 }}
+			viewport={{ once: true }}
+			className="mb-20 grid grid-cols-1 md:grid-cols-2 gap-x-10 items-center"
+		>
 			<div className="md:hidden">
 				<h3 className="text-textColor">Featured Project</h3>
 				<h1 className="text-xl md:text-3xl text-slate-400 font-medium mb-4">{title}</h1>
 			</div>
 			<div className={`${isEven == false ? "md:order-1" : ""} `}>
 				<figure>
-					<img src={imgSrc} alt={alt} className="rounded-md " />
+					<img src={imgSrc} alt={alt} loading="lazy" className="rounded-md " />
 				</figure>
 			</div>
 			<div className="mt-4">
@@ -36,7 +42,7 @@ const SingleProject = ({ ind, project }) => {
 					</button>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
