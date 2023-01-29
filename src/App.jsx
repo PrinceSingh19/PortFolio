@@ -13,12 +13,12 @@ function App() {
 	useEffect(() => {
 		setTimeout(() => {
 			setLoading(false);
-		}, 1000);
+		}, 1300);
 	}, []);
 
 	if (loading) {
 		return (
-			<div className="flex justify-center items-center mt-96 md:mt-56 animate-bounce">
+			<div className="flex justify-center items-center mt-56 animate-bounce">
 				<img src="/images/Logo.png" alt="logo" className="w-20" />
 			</div>
 		);

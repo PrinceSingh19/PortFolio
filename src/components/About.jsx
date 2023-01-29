@@ -13,11 +13,12 @@ const About = () => {
 				>
 					About Me
 				</motion.h1>
-				<div className="grid grid-cols-1 md:grid-cols-2">
+				<div className="grid grid-cols-1 md:grid-cols-2 ">
 					<motion.div
 						initial={{ opacity: 0 }}
 						transition={{ delay: 0.1 }}
 						whileInView={{ opacity: 1 }}
+						className="order-2 md:order-first"
 					>
 						<p>
 							Hello my name is Prince Singh and I love to build things that works in internet. I
@@ -41,11 +42,11 @@ const About = () => {
 							</ul>
 						</div>
 					</motion.div>
-					<div className="mt-6 md:mt-0 md:ml-20 ">
+					<div className=" mt-6 mb-3 md:mb-0 md:mt-0 md:ml-20 flex justify-center">
 						<img
-							src="https://th.bing.com/th/id/R.0225855b2d84ed75edee72d336db94a7?rik=ur03%2b98dOcebMw&riu=http%3a%2f%2feskipaper.com%2fimages%2fimages-2.jpg&ehk=d1SxQlwf21gsnaF28wg0HZQjPhrc2N0xSKLqA2lgX3c%3d&risl=&pid=ImgRaw&r=0g"
+							src="/images/avatar.jpg"
 							alt="my profie image"
-							className="object-cover h-30"
+							className="object-cover w-52 rounded-md mix-blend-luminosity"
 						/>
 					</div>
 				</div>
