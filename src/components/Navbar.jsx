@@ -83,7 +83,7 @@ const Navbar = () => {
 									className="pt-9"
 								>
 									<a
-										href="https://drive.google.com/file/d/1NX8nui3zYhHdodAM3g1s8WSuBgNoLsvx/view?usp=sharing"
+										href="https://drive.google.com/file/d/1MMtifE8ig_VdKVVd2rqAWpLGhwI7DZRD/view?usp=sharing"
 										target="_blank"
 										className="hover:bg-slate-700 md:hover:bg-inherit  w-full text-center py-1 font-medium md:font-normal"
 									>
