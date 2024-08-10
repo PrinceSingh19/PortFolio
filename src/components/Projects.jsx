@@ -11,7 +11,8 @@ const Projects = () => {
 			<div className="mt-2">
 				{/* Displaying main react projects */}
 				<h1 className="text-slate-300 text-2xl font-medium mb-4">
-					Project that I have made recently
+					Here are the projects I’ve been involved in or developed to date, including personal
+					initiatives and publicly accessible work from my previous organization.
 				</h1>
 				<div>
 					{Data.map((project, index) => {

@@ -36,14 +36,16 @@ const Intro = () => {
 				Prince Singh.
 			</motion.h3>{" "}
 			<motion.sp variants={item} an className="text-slate-400 text-xl md:text-3xl font-medium">
-				Front end engineer
+				Software Engineer
 			</motion.sp>
-			<motion.h3 variants={item} className="text-slate-400 text-xl md:text-3xl font-medium ">
+			{/* <motion.h3 variants={item} className="text-slate-400 text-xl md:text-3xl font-medium ">
 				I build applications for the web.
-			</motion.h3>
-			<motion.p variants={item} className="text-lg md:text-xl mt-12 md:w-80">
-				I'm a frontend engineer specializing in building accessible and user facing features with
-				the help of reusable codes
+			</motion.h3> */}
+			<motion.p variants={item} className="text-lg md:text-xl mt-12 md:w-3/4 xl:w-1/2">
+				Experienced Software Engineer with a strong foundation in both frontend and backend
+				technologies. I excel in enhancing products, optimizing user experiences, and adapting to
+				diverse tech stacks. Passionate about solving complex challenges, I continuously learn new
+				programming languages and technologies to deliver impactful solutions that drive success.
 			</motion.p>
 		</motion.div>
 	);

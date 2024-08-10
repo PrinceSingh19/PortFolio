@@ -1,5 +1,23 @@
 export const Data = [
 	{
+		title: "Gulf Ticket",
+		imgSrc: "/images/gulf-ticket.png",
+		alt: "gulf ticket",
+		description:
+			"Gulf Ticket is a unique online platform that conducts the most unusual weekly draws,It offers participants a life-changing opportunity to make their dreams come true.",
+		//github: "https://github.com/PrinceSingh19/ExpressCart",
+		demoLink: "https://gulfticket.com/",
+	},
+	{
+		title: "Media Mena",
+		imgSrc: "/images/media-mena.png",
+		alt: "Media mena",
+		description:
+			"MediaMENA stands out from typical SEO agencies as a dedicated advisor on the journey to digital prominence. Established in 2008 by a group of SEO pioneers committed to transparency and tangible results, MediaMENA has evolved into a team of experienced digital specialists who cater to clients around the world.",
+		//github: "https://github.com/PrinceSingh19/ExpressCart",
+		demoLink: "https://media-mena.com/",
+	},
+	{
 		title: "ExpressCart",
 		imgSrc: "/images/exresscart.jpg",
 		alt: "expresscart project",

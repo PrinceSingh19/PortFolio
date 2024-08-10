@@ -35,7 +35,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<nav className="sticky backdrop-blur-2xl h-10 top-0 z-50  flex flex-col justify-center ">
+			<nav className="sticky backdrop-blur-2xl h-10 top-0 z-50  flex flex-col justify-center py-4 ">
 				<div className="flex justify-between items-center w-full pr-5 ">
 					<div className="mt-1">
 						<img src="/images/Logo.png" alt="logo" className="w-14 md:w-20" />
@@ -48,7 +48,7 @@ const Navbar = () => {
 							transition={{ duration: 0.3, delay: 0.2 * 4 }}
 						>
 							<a
-								href="https://drive.google.com/file/d/1NX8nui3zYhHdodAM3g1s8WSuBgNoLsvx/view?usp=sharing"
+								href="https://drive.google.com/file/d/1FhrIf-_9868OXhHxP1abzn3wT0SKvVJo/view?usp=sharing"
 								target="_blank"
 								className="hover:bg-slate-700 md:hover:bg-inherit  w-full text-center py-1 font-medium md:font-normal"
 							>
@@ -83,7 +83,7 @@ const Navbar = () => {
 									className="pt-9"
 								>
 									<a
-										href="https://drive.google.com/file/d/1MMtifE8ig_VdKVVd2rqAWpLGhwI7DZRD/view?usp=sharing"
+										href="https://drive.google.com/file/d/1FhrIf-_9868OXhHxP1abzn3wT0SKvVJo/view?usp=sharing"
 										target="_blank"
 										className="hover:bg-slate-700 md:hover:bg-inherit  w-full text-center py-1 font-medium md:font-normal"
 									>

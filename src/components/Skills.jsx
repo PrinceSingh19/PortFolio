@@ -1,9 +1,20 @@
 import React, { useRef } from "react";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaBootstrap, FaGulp, FaReact } from "react-icons/fa";
-import { SiJquery, SiRedux } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
+import {
+	SiTailwindcss,
+	SiFastify,
+	SiExpress,
+	SiReactquery,
+	SiRedux,
+	SiDrizzle,
+	SiPostgresql,
+	SiPassport,
+} from "react-icons/si";
 import { DiGit, DiSass } from "react-icons/di";
+import { RiNextjsLine } from "react-icons/ri";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
 import { motion } from "framer-motion";
 const Skills = () => {
 	const container = {
@@ -39,8 +50,8 @@ const Skills = () => {
 						transition={{ delay: 0.1 }}
 						whileInView={{ opacity: 1 }}
 					>
-						I create website that are performant, easy to use and build with keeping the end-user in
-						mind. My main area of expertise is front-end-development.
+						I creates the applications that are performant, easy to use and build with keeping the
+						end-user in mind.
 					</motion.p>
 					<br />
 					<motion.p
@@ -55,41 +66,50 @@ const Skills = () => {
 							variants={container}
 							whileInView="show"
 							initial="hidden"
-							className="list-disc list-inside "
+							className="list-disc list-inside space-y-2"
 						>
 							<motion.li variants={item} className="list">
 								<IoLogoJavascript className="fill-yellow-300 text-xl" /> JavaScript
 							</motion.li>
 							<motion.li variants={item} className="list">
-								<FaReact className="fill-blue-300 text-xl" /> React
+								<FaReact className="fill-blue-300 text-xl" /> ReactJS
 							</motion.li>
 							<motion.li variants={item} className="list">
-								<SiRedux className="fill-purple-500 text-xl" /> Redux
+								<RiNextjsLine className="fill-purple-500 text-xl" /> NextJS
 							</motion.li>
 							<motion.li variants={item} className="list">
-								<SiJquery className="fill-blue-500 text-xl" /> Jquery
+								<RiTailwindCssFill className="fill-blue-500 text-xl" /> TailwindCSS
 							</motion.li>
 							<motion.li variants={item} className="list">
-								<FaGulp className="fill-red-500 text-xl" /> Gulp
+								<SiReactquery className="fill-red-500 text-xl" /> React Query
+							</motion.li>
+							<motion.li variants={item} className="list">
+								<SiRedux className="fill-red-500 text-xl" /> Redux/Redux Toolkit
 							</motion.li>
 						</motion.ul>
 						<motion.ul
 							variants={container}
 							initial="hidden"
 							whileInView="show"
-							className="list-disc list-inside"
+							className="list-disc list-inside space-y-2"
 						>
 							<motion.li variants={item} className="list">
-								<SiTailwindcss className="fill-blue-500 text-xl" /> TailwindCSS
+								<FaNodeJs className="fill-blue-500 text-xl" /> NodeJS
 							</motion.li>
 							<motion.li variants={item} className="list">
-								<FaBootstrap className="fill-purple-500 text-xl" /> BootStrap
+								<SiExpress className="fill-purple-500 text-xl" /> ExpressJS{" "}
 							</motion.li>
 							<motion.li variants={item} className="list">
-								<DiSass className="fill-pink-500 text-xl" /> Sass
+								<SiFastify className="fill-pink-500 text-xl" /> Fastify
 							</motion.li>
 							<motion.li variants={item} className="list">
-								<DiGit className="fill-red-500 text-xl" /> Git
+								<SiDrizzle className="fill-red-500 text-xl" /> Drizzle Orm
+							</motion.li>
+							<motion.li variants={item} className="list">
+								<SiPostgresql className="fill-red-500 text-xl" /> Postgresql
+							</motion.li>
+							<motion.li variants={item} className="list">
+								<SiPassport className="fill-red-500 text-xl" /> PassportJS
 							</motion.li>
 						</motion.ul>
 					</div>
@@ -97,7 +117,7 @@ const Skills = () => {
 						initial={{ opacity: 0 }}
 						transition={{ delay: 0.1 }}
 						whileInView={{ opacity: 1 }}
-						className="mt-2"
+						className="mt-4"
 					>
 						Visit my{" "}
 						<a

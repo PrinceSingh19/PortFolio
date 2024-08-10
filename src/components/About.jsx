@@ -21,9 +21,14 @@ const About = () => {
 						className="order-2 md:order-first"
 					>
 						<p>
-							Hello my name is Prince Singh and I love to build things that works in internet. I
-							have serious passion for creating intuitive, dynamic user experiences and making web
-							more accessible to people through my work.
+							Experienced Software Engineer with a strong background in both frontend and backend
+							technologies. I have a proven track record of driving product enhancements, optimizing
+							user experiences, and mastering diverse tech stacks. Adept at translating complex
+							client needs into impactful solutions, I am passionate about leveraging my expertise
+							to tackle challenging projects and contribute to your organization's success. My
+							hunger for continuous learning drives me to explore and master new programming
+							languages and emerging technologies, ensuring I stay at the forefront of industry
+							advancements.
 						</p>
 						<br />
 						<p>
@@ -34,11 +39,11 @@ const About = () => {
 						<div className="grid grid-cols-2">
 							<ul className="list-disc list-inside text-white">
 								<li>JavaScript (ES6+)</li>
-								<li>React</li>
+								<li>ReactJS/ NextJS</li>
 							</ul>
 							<ul className="list-disc list-inside text-white">
-								<li>TailwindCSS</li>
-								<li>BootStrap</li>
+								<li>NodeJS</li>
+								<li>Tailwindcss</li>
 							</ul>
 						</div>
 					</motion.div>
