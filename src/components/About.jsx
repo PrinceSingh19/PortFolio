@@ -21,14 +21,11 @@ const About = () => {
 						className="order-2 md:order-first"
 					>
 						<p>
-							Experienced Software Engineer with a strong background in both frontend and backend
-							technologies. I have a proven track record of driving product enhancements, optimizing
-							user experiences, and mastering diverse tech stacks. Adept at translating complex
-							client needs into impactful solutions, I am passionate about leveraging my expertise
-							to tackle challenging projects and contribute to your organization's success. My
-							hunger for continuous learning drives me to explore and master new programming
-							languages and emerging technologies, ensuring I stay at the forefront of industry
-							advancements.
+							Results-driven Software Engineer with over 1.5 years of experience enhancing product
+							functionality and optimizing user experiences. I've led the development of 10+ web
+							applications, boosting user engagement by 50% and improving site performance by 70%.
+							Skilled in translating complex requirements into scalable solutions, I stay updated on
+							industry advancements and have mastered many programming languages.
 						</p>
 						<br />
 						<p>
@@ -49,9 +46,9 @@ const About = () => {
 					</motion.div>
 					<div className=" mt-6 mb-3 md:mb-0 md:mt-0 md:ml-20 flex justify-center">
 						<img
-							src="/images/avatar.jpg"
+							src="/images/my-photo.jpeg"
 							alt="my profie image"
-							className="object-cover w-52 rounded-md mix-blend-luminosity"
+							className="object-cover w-52 md:w-80 rounded-md "
 						/>
 					</div>
 				</div>

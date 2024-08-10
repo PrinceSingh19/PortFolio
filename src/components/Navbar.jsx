@@ -48,7 +48,7 @@ const Navbar = () => {
 							transition={{ duration: 0.3, delay: 0.2 * 4 }}
 						>
 							<a
-								href="https://drive.google.com/file/d/1FhrIf-_9868OXhHxP1abzn3wT0SKvVJo/view?usp=sharing"
+								href="https://drive.google.com/file/d/1QFoYNy-Pe1UiZRxjDcMKmcP81GsFbsRS/view?usp=sharing"
 								target="_blank"
 								className="hover:bg-slate-700 md:hover:bg-inherit  w-full text-center py-1 font-medium md:font-normal"
 							>
@@ -83,7 +83,7 @@ const Navbar = () => {
 									className="pt-9"
 								>
 									<a
-										href="https://drive.google.com/file/d/1FhrIf-_9868OXhHxP1abzn3wT0SKvVJo/view?usp=sharing"
+										href="https://drive.google.com/file/d/1QFoYNy-Pe1UiZRxjDcMKmcP81GsFbsRS/view?usp=sharing"
 										target="_blank"
 										className="hover:bg-slate-700 md:hover:bg-inherit  w-full text-center py-1 font-medium md:font-normal"
 									>
